@@ -18,7 +18,8 @@ class DetailModel extends Component {
         }
         return (
             <Modal animationType="slide"
-                   visible={this.props.place !== null} >
+                   visible={this.props.place !== null}
+                   onRequestClose={this.props.onModalDismiss} >
                 <View style={styles.modalContainer}>
                     {modelContent}
                     <View style={styles.footerView}>
